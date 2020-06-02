@@ -6,32 +6,51 @@
     <meta name="description" content="This application is to help to decide which fonts colours to use when building applications.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/font_colour_comp.css">
-    <script src="scripts/font_colour_comp.js" defer>
-
-    </script>
+    <script src="scripts/font_colour_comp.js" defer></script>
 
     <title>Font and Colour Comparison Tool</title>
   </head>
 
   <body>
-    <h1>I am a header</h1>
+    <header>
+      <h1>Font and Colour Comparison Tool</h1>
+      <p>Use this application to help decide which fonts and colours to use when building other applications.</p>
+    </header>
 
-    <p id="para_1">Font Family: sans-serif | Font Size: 20px</p>
-    <div class="para_btns">
-      <button type="button" class="font_btn" id="font_plus_1">Font + </button>
-      <button type="button" class="font_btn" id="font_minus_1">Font - </button>
-      <button type="button" class="font_btn" id="italics_1">Italics On</button>
-      <button type="button" class="font_btn" id="weight_1">Bold On</button>
-      <button type="button" class="font_btn" id="reset_1">Reset</button>
+    <hr>
+
+    <h2>Font Comparison Section</h2>
+    <div class="instructions">
+      <ul>
+        <li>To change the "font-family" property of a text box; click on the box, then scroll down the font-list and click on the font you want.</li>
+        <li>To change the "color" property of the text within a box; click on the box, then scroll down the colour-list and click on the colour you want.</li>
+      </ul>
+    </div>
+    <div class="optionsContainer">
+      <hr>
+      <h2>Text Box One</h2>
+      <p class="pointer" id="para_1">Font Family: sans-serif | Font Size: 20px</p>
+      <div class="para_btns">
+        <button type="button" class="font_btn" id="font_plus_1">Font + </button>
+        <button type="button" class="font_btn" id="font_minus_1">Font - </button>
+        <button type="button" class="font_btn" id="italics_1">Italics On</button>
+        <button type="button" class="font_btn" id="weight_1">Bold On</button>
+        <button type="button" class="font_btn" id="reset_1">Reset</button>
+      </div>
+      <hr>
     </div>
 
-    <p id="para_2">Font Family: sans-serif | Font Size: 20px</p>
-    <div class="para_btns">
-      <button type="button" class="font_btn" id="font_plus_2">Font + </button>
-      <button type="button" class="font_btn" id="font_minus_2">Font - </button>
-      <button type="button" class="font_btn" id="italics_2">Italics On</button>
-      <button type="button" class="font_btn" id="weight_2">Bold On</button>
-      <button type="button" class="font_btn" id="reset_2">Reset</button>
+    <div class="optionsContainer">
+      <h2>Text Box Two</h2>
+      <p class="pointer" id="para_2">Font Family: sans-serif | Font Size: 20px</p>
+      <div class="para_btns">
+        <button type="button" class="font_btn" id="font_plus_2">Font + </button>
+        <button type="button" class="font_btn" id="font_minus_2">Font - </button>
+        <button type="button" class="font_btn" id="italics_2">Italics On</button>
+        <button type="button" class="font_btn" id="weight_2">Bold On</button>
+        <button type="button" class="font_btn" id="reset_2">Reset</button>
+      </div>
+      <hr>
     </div>
 
     <div class="optionsContainer">
@@ -218,25 +237,41 @@
     </div>
 
     <hr>
-    <p id="outer_box_para">Outer Box Background Colour: White</p>
-    <p id="middle_box_para">Middle Box Background Colour: White</p>
-    <p id="inner_box_para">Inner Box Background Colour: White</p>
-    <div class="para_btns">
-      <button type="button" class="font_btn" id="reset_boxes">Reset Box Colours</button>
+
+    <h2>Background Colour Comparison Section</h2>
+    <div class="instructions">
+      <ul>
+        <li>To change the "background-color" property within a box; click on the box, then scroll down the colour-list and click on the colour you want.</li>
+        <li>The colour selected per box will be updated within the respective text boxes below.</li>
+      </ul>
     </div>
 
     <div class="optionsContainer">
-      <div class="outer_box" id="outer_box">
-        <div class="middle_box" id="middle_box">
-          <div class="inner_box" id="inner_box">
+      <hr>
+      <p id="outer_box_para">Outer Box Background Colour: White</p>
+      <p id="middle_box_para">Middle Box Background Colour: White</p>
+      <p id="inner_box_para">Inner Box Background Colour: White</p>
+      <hr>
+    </div>
+
+    <h2>Background Boxes</h2>
+    <div class="optionsContainer">
+      <div class="outer_box pointer" id="outer_box">
+        <div class="middle_box pointer" id="middle_box">
+          <div class="inner_box pointer" id="inner_box">
           </div>
         </div>
       </div>
     </div>
 
     <div class="optionsContainer">
+      <div class="box_btn_cont">
+        <button type="button" class="box_reset_btn" id="reset_boxes">Reset Box Colours</button>
+      </div>
+      <hr>
       <div class="colourList_2">
       </div>
+      <hr>
     </div>
 
   </body>

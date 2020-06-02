@@ -322,21 +322,24 @@ function updateBoxColour(){
         let styles = window.getComputedStyle(colourName);
         let bgColour = styles.getPropertyValue("background-color");
         outer_box.style.backgroundColor = bgColour;
+        outer_box_para.style.borderColor = bgColour;
 
       } else if (box_selected == "middle_box"){
         let styles = window.getComputedStyle(colourName);
         let bgColour = styles.getPropertyValue("background-color");
         middle_box.style.backgroundColor = bgColour;
+        middle_box_para.style.borderColor = bgColour;
 
       } else if (box_selected == "inner_box"){
         let styles = window.getComputedStyle(colourName);
         let bgColour = styles.getPropertyValue("background-color");
         inner_box.style.backgroundColor = bgColour;
+        inner_box_para.style.borderColor = bgColour;
       }
     }
   }
 }
-// Updating the Box Paragraphs with the current Background Colours -------------
+// Updating the Box Paragraphs with the Selected Background Colours -------------
 let outer_box_para = document.querySelector("#outer_box_para");
 let middle_box_para = document.querySelector("#middle_box_para");
 let inner_box_para = document.querySelector("#inner_box_para");
@@ -386,6 +389,9 @@ function reset_boxes_func(){
   outer_box.style.backgroundColor = "white";
   middle_box.style.backgroundColor = "white";
   inner_box.style.backgroundColor = "white";
+  outer_box_para.style.borderColor = "black";
+  middle_box_para.style.borderColor = "black";
+  inner_box_para.style.borderColor = "black";
   outer_box_para.textContent = "Outer Box Background Colour: White";
   middle_box_para.textContent = "Middle Box Background Colour: White";
   inner_box_para.textContent = "Inner Box Background Colour: White";
