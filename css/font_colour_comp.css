@@ -1,3 +1,273 @@
 h1, h2 {
   text-align: center;
 }
+p {
+  font-family: sans-serif;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid black;
+  width: 90%;
+}
+p:hover {
+  border: 4px solid black;
+}
+/* Paragraph buttons--------------------------------------------------- */
+.para_btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.font_btn {
+  width: 10%;
+}
+/* -------------------------------------------------------------------- */
+.optionsContainer {
+  position: relative;
+  margin: 5px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 90%;
+}
+.outer_box, .middle_box, .inner_box {
+  margin: 5px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 80%;
+}
+.optionsContainer .outer_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: white;
+}
+.outer_box .middle_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  background-color: white;
+}
+.middle_box .inner_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  background-color: white;
+}
+
+/* Fonts and Colours Scroll Lists --------------------------------------------- */
+.fontList, .colourList, .colourList_2 {
+  margin: 0px auto;
+  width: 85%;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow-x: scroll;
+}
+.fontList p, .colourList p, .colourList_2 p {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.fontList p:hover {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+}
+.colourList p:hover, , .colourList_2 p:hover {
+  font-size: 2em;
+}
+.stickyHeader {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  width:100%;
+  margin: 0px auto;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+/* Scroll-down Fonts ----------------------------------------------------------- */
+/* Sans-serif fonts ---------------------- */
+.arial { font-family: arial; }
+.futura { font-family: futura; }
+.geneva { font-family: geneva; }
+.gillSands { font-family: "gill sands"; }
+.helvetica { font-family: helvetica; }
+.impact { font-family: impact; }
+.lucidaGrande { font-family: "lucida grande"; }
+.optima { font-family: optima; }
+.tahoma { font-family: tahoma; }
+.trebuchetMS { font-family: "trebuchet MS"; }
+.verdana { font-family: verdana; }
+/* Serif fonts ---------------------- */
+.americanTypewriter { font-family: "american typewriter"; }
+.baskerville { font-family: baskerville; }
+.bigCaslon { font-family: "big caslon"; }
+.didot { font-family: didot; }
+.georgia { font-family: georgia; }
+.hoeflerText { font-family: "hoefler text"; }
+.lucidaBright { font-family: "lucida bright"; }
+.palatino { font-family: palatino; }
+.timesNewRoman { font-family: "times new roman"; }
+/* Monospaced fonts ---------------------- */
+.andaleMono { font-family: "andale mono"; }
+.courier { font-family: courier; }
+.courierNew { font-family: "courier new"; }
+.lucidaSansTypewriter { font-family: "lucida sans typewriter"; }
+.monaco { font-family: monaco; }
+/* Fantasy fonts ---------------------- */
+.copperplate { font-family: copperplate; }
+.luminari { font-family: luminari; }
+.papyrus { font-family: papyrus; }
+/* Script / Cursive fonts ---------------------- */
+.bradleyHand { font-family: "bradley hand"; }
+.comicSansMS { font-family: "comic sans ms"; }
+.brushScriptMT { font-family: "brush script mt"; }
+
+/* Scroll Down Colour Classes -------------------------------------------------------- */
+
+.white { background-color  : white; }
+.snow { background-color  : snow; }
+.honeydew { background-color  : honeydew; }
+.mintcream { background-color  : mintcream; }
+.azure { background-color  : azure; }
+.aliceblue { background-color  : aliceblue; }
+.ghostwhite { background-color  : ghostwhite; }
+.whitesmoke { background-color  : whitesmoke; }
+.seashell { background-color  : seashell; }
+.beige { background-color  : beige; }
+.oldlace { background-color  : oldlace; }
+.floralwhite { background-color  : floralwhite; }
+.ivory { background-color  : ivory; }
+.antiquewhite { background-color  : antiquewhite; }
+.linen { background-color  : linen; }
+.lavenderblush { background-color  : lavenderblush; }
+.mistyrose { background-color  : mistyrose; }
+.cornsilk { background-color  : cornsilk; }
+.blanchedalmond { background-color  : blanchedalmond; }
+.bisque { background-color  : bisque; }
+.navajowhite { background-color  : navajowhite; }
+.wheat { background-color  : wheat; }
+.burlywood { background-color  : burlywood; }
+.tan { background-color  : tan; }
+.rosybrown { background-color  : rosybrown; }
+.sandybrown { background-color  : sandybrown; }
+.goldenrod { background-color  : goldenrod; }
+.darkgoldenrod { background-color  : darkgoldenrod; }
+.peru { background-color  : peru; }
+.chocolate { background-color  : chocolate; }
+.saddlebrown { background-color  : saddlebrown; color: white; }
+.sienna { background-color  : sienna; color: white; }
+.brown { background-color  : brown; color: white; }
+.maroon { background-color  : maroon; color: white; }
+.lightsalmon { background-color  : lightsalmon; }
+.salmon { background-color  : salmon; }
+.darksalmon { background-color  : darksalmon; }
+.lightcoral { background-color  : lightcoral; }
+.indianred { background-color  : indianred; }
+.crimson { background-color  : crimson; }
+.firebrick { background-color  : firebrick; color: white; }
+.darkred { background-color  : darkred; color: white; }
+.red { background-color  : red; }
+.orangered { background-color  : orangered; }
+.tomato { background-color  : tomato; }
+.coral { background-color  : coral; }
+.darkorange { background-color  : darkorange; }
+.orange { background-color  : orange; }
+.yellow { background-color  : yellow; }
+.lightyellow { background-color  : lightyellow; }
+.lemonchiffon { background-color  : lemonchiffon; }
+.lightgoldenrodyellow { background-color  : lightgoldenrodyellow; }
+.papayawhip { background-color  : papayawhip; }
+.moccasin { background-color  : moccasin; }
+.peachpuff { background-color  : peachpuff; }
+.palegoldenrod { background-color  : palegoldenrod; }
+.khaki { background-color  : khaki; }
+.darkkhaki { background-color  : darkkhaki; }
+.gold { background-color  : gold; }
+.darkolivegreen { background-color  : darkolivegreen; }
+.olive { background-color  : olive; }
+.olivedrab { background-color  : olivedrab; }
+.yellowgreen { background-color  : yellowgreen; }
+.limegreen { background-color  : limegreen; }
+.lime { background-color  : lime; }
+.lawngreen { background-color  : lawngreen; }
+.chartreuse { background-color  : chartreuse; }
+.greenyellow { background-color  : greenyellow; }
+.springgreen { background-color  : springgreen; }
+.mediumspringgreen { background-color  : mediumspringgreen; }
+.lightgreen { background-color  : lightgreen; }
+.palegreen { background-color  : palegreen; }
+.darkseagreen  { background-color  : darkseagreen; }
+.mediumaquamarine { background-color  : mediumaquamarine; }
+.mediumseagreen { background-color  : mediumseagreen; }
+.seagreen { background-color  : seagreen; }
+.forestgreen { background-color  : forestgreen; color: white; }
+.green { background-color  : green; color: white; }
+.darkgreen { background-color  : darkgreen; color: white; }
+.aqua { background-color  : aqua; }
+.cyan { background-color  : cyan; }
+.lightcyan { background-color  : lightcyan; }
+.paleturquoise { background-color  : paleturquoise; }
+.aquamarine { background-color  : aquamarine; }
+.turquoise { background-color  : turquoise; }
+.mediumturquoise { background-color  : mediumturquoise; }
+.darkturquoise { background-color  : darkturquoise; }
+.lightseagreen { background-color  : lightseagreen; }
+.cadetblue { background-color  : cadetblue; }
+.darkcyan { background-color  : darkcyan; color: white; }
+.teal { background-color  : teal; color: white; }
+.lightsteelblue { background-color  : lightsteelblue; }
+.powderblue { background-color  : powderblue; }
+.lightblue { background-color  : lightblue; }
+.skyblue { background-color  : skyblue; }
+.lightskyblue { background-color  : lightskyblue; }
+.deepskyblue { background-color  : deepskyblue; }
+.dodgerblue { background-color  : dodgerblue; }
+.cornflowerblue { background-color  : cornflowerblue; }
+.steelblue { background-color  : steelblue; }
+.royalblue { background-color  : royalblue; }
+.blue { background-color  : blue; color: white; }
+.mediumblue { background-color  : mediumblue; color: white; }
+.darkblue { background-color  : darkblue; color: white; }
+.navy { background-color  : navy; color: white; }
+.midnightblue { background-color  : midnightblue; color: white; }
+.pink { background-color  : pink; }
+.lightpink { background-color  : lightpink; }
+.hotpink { background-color  : hotpink; }
+.deeppink { background-color  : deeppink; }
+.palevioletred { background-color  : palevioletred; }
+.mediumvioletred { background-color  : mediumvioletred; }
+.lavender { background-color  : lavender; }
+.thistle { background-color  : thistle; }
+.plum { background-color  : plum; }
+.violet { background-color  : violet; }
+.orchid { background-color  : orchid; }
+.fuchsia { background-color  : fuchsia; }
+.magenta { background-color  : magenta; }
+.mediumorchid { background-color  : mediumorchid; }
+.mediumpurple { background-color  : mediumpurple; }
+.blueviolet { background-color  : blueviolet; }
+.darkviolet { background-color  : darkviolet; }
+.darkorchid { background-color  : darkorchid; }
+.darkmagenta { background-color  : darkmagenta; color: white; }
+.purple { background-color  : purple; color: white; }
+.indigo { background-color  : indigo; color: white; }
+.darkslateblue { background-color  : darkslateblue; color: white; }
+.slateblue { background-color  : slateblue; }
+.mediumslateblue { background-color  : mediumslateblue; }
+.gainsboro { background-color  : gainsboro; }
+.lightgray { background-color  : lightgray; }
+.silver { background-color  : silver; }
+.darkgray { background-color  : darkgray; }
+.gray { background-color  : gray; }
+.dimgray { background-color  : dimgray; }
+.lightslategray { background-color  : lightslategray; }
+.slategray { background-color  : slategray; }
+.darkslategray { background-color  : darkslategray; color: white; }
+.black { background-color  : black; color: white; }
